@@ -1,61 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+## 預覽
+![首頁(未登入)](https://user-images.githubusercontent.com/82071590/114336018-a289ef80-9b80-11eb-8f91-ccf7f57172ab.png)
+![註冊](https://user-images.githubusercontent.com/82071590/114336020-a453b300-9b80-11eb-9ae4-d0601fbb15eb.png)
+![首頁(已登入)](https://user-images.githubusercontent.com/82071590/114336021-a584e000-9b80-11eb-8ec2-201e5480c96a.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 預計開發功能
+1. 首頁
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    顯示群組中進行中的訂單
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+2. 訂餐管理
+    - 新增訂餐
+    - 訂餐紀錄
+        - 個人訂單一覽
 
-## Learning Laravel
+            列出有參與的所有訂單，可進入詳細頁查看內容，並給予評價
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+        - 群組訂單一覽
+            1. 顯示各群組基本資訊，點擊進入第二層(該群組一覽)
+3. 帳戶管理
+    1. 個人資訊
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+        更改會員暱稱，顯示相關資料(電子信箱)
 
-## Laravel Sponsors
+        - 權限 : 有「會計」權限才顯示此功能
+    2. 權限管理
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+        可更改群組下所有成員的權限
 
-### Premium Partners
+        - 權限 : 有「管理員」權限才顯示此功能
+    3. 群組管理
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+        設定群組名稱、邀請碼、群組介紹、群組圖片
 
-## Contributing
+        - 權限 : 有「管理員」權限才顯示此功能
+4. 評價紀錄
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+     列出個人評價過的所有資訊
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. 商家管理
+    - 新增商家
+    - 列出所有商家
+        1. 搜尋功能，可篩選(我的最愛、評價、類別、地點、關鍵字搜尋)
+        2. 可排序(新增時間、評價高低)
+        3. 顯示欄位:
+            - 圖片
+            - 商家名稱
+            - N筆評價
+            - 地址:
+            - 狀態:
+            - 備註:滿500外送
+            - 星數
+            - 加到我的最愛
+            - 商家介紹(過長則擷取之)
+            - hashtag
+    - 詳細頁
+        1. 基本資料
+        2. 所有品項一覽，有評價相關資訊，可查看/新增 該品項相關評價
+        3. 評價一覽，可查看/新增 評價內容
+        4. 可新增hashtag
