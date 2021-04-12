@@ -81,3 +81,11 @@ artisan
 .idea/meal-reservation.iml
 .idea/deployment.xml
 .idea/.gitignore
+.idea/laravel-plugin.xml
+.idea/sshConfigs.xml
+.idea/vcs.xml
+.idea/webServers.xml
+vendor.zip
+.phpstorm.meta.php
+_ide_helper.php
+node_modules.zip
